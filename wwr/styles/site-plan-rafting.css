@@ -15,6 +15,8 @@
   --nav-hover-background-color: #003249;
 }
 
+/* Body, headings, header, and paragraph styles */
+
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
@@ -35,9 +37,11 @@ p {
     padding: 25px;
 }
 
+/* Navigation styles */
+
 nav {
     background-color: var(--nav-background-color);
-    font-size: 1.2rem;
+    font-size: 1.2rem; 
     display: flex;
 }
 
