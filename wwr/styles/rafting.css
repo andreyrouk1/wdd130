@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --primary-color: #003249;
+  --secondary-color: #007EA7;
+  --accent1-color: #80CED7;
+  --accent2-color: #CCDBDC;
+
+  --heading-font: 'Open Sans', sans-serif;
+  --paragraph-font: 'Open Sans', sans-serif;
+
+  --nav-background-color: #003249;
+  --nav-link-color: #80CED7;
+  --nav-hover-link-color: #007EA7;
+  --nav-hover-background-color: #003249;
+}
+
+html {
+    width: 800px;
+}
+
+/* Body, headings, header, footer, and paragraph styles */
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: var(--nav-background-color);
+    justify-content: center;
+    align-items: center;
+    display: flex; /* I wanted to play around with the menu, so it doesn't look like the one on the example, but it follows the guidelines */
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: var(--nav-background-color);
+    color: #fff;
+    padding: 20px;
+}
+
+p {
+    padding: 10px 0 0 0;
+}
+
+/* Navigation styles */
+
+header nav {
+    background-color: var(--nav-background-color);
+    justify-content: center;
+    align-items: center;
+}
+
+nav {    
+    font-size: 1.2rem; 
+    display: flex;
+}
+
+nav a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+/* Hero Section styling */
+
+.hero {
+    position: relative;
+    height: 500px;
+}
+
+.hero::before { /* I wanted a full background overlay, so I did some research on how to do it, that's why it's different from the assignment example */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1, .hero article {
+    position: absolute;
+    z-index: 2;
+}
+
+.hero h1 {
+    display: block;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 3em;
+    color: #fff;
+}
+
+.hero article {
+    top: 35%;
+    left: 0;
+    box-sizing: border-box;
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    background-color: #80ced73f;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.hero article img {
+    float: right;
+    width: 30%;
+    margin-left: 20px;
+}
+
+/* Footer navigation */
+
+footer a:hover {
+    transform: scale(1.2);
+    background-color: #ffffff00; /* I couldn't figure out how to get rid of the background hover set by the general nav, so I made it transparent in the footer */
+}
+
+footer a {
+    margin: 0%;
+    padding: 0 0 0 0;
+}
+
+footer img {
+    width: 32px;
+    padding: 0 20px 20px 0;
+    
+}
