@@ -16,10 +16,10 @@
 }
 
 html {
-    width: 800px;
+    width: 1200px;
 }
 
-/* Body, headings, header, footer, and paragraph styles */
+/* Body, headings, header, and paragraph styles */
 
 body {
     font-family: var(--paragraph-font);
@@ -33,12 +33,22 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+h2 {
+    font-size: 2em;
+}
+
 header {
     padding: 20px;
     background-color: var(--nav-background-color);
     justify-content: center;
     align-items: center;
-    display: flex; /* I wanted to play around with the menu, so it doesn't look like the one on the example, but it follows the guidelines */
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.logo {
+    padding: 10px;
+    height: 75px;
 }
 
 header img {
@@ -46,14 +56,10 @@ header img {
     height: auto;
 }
 
-footer {
-    background-color: var(--nav-background-color);
-    color: #fff;
-    padding: 20px;
-}
-
 p {
     padding: 10px 0 0 0;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /* Navigation styles */
@@ -141,11 +147,38 @@ nav a:hover {
     margin-left: 20px;
 }
 
-/* Footer navigation */
+/* Footer Styles */
+
+footer {
+    background-color: var(--nav-background-color);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+footer p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+    padding-right: 20px;
+  }
 
 footer a:hover {
     transform: scale(1.2);
-    background-color: #ffffff00; /* I couldn't figure out how to get rid of the background hover set by the general nav, so I made it transparent in the footer */
+    background-color: #ffffff00;
 }
 
 footer a {
@@ -153,8 +186,38 @@ footer a {
     padding: 0 0 0 0;
 }
 
-footer img {
-    width: 32px;
-    padding: 0 20px 20px 0;
-    
-}
+/* History Section Styles */
+
+.history-section {
+    background-color: #F5F5F5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+/* Adventure Awaits Section Styles */
+
+.adventures-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  figure {
+    margin: 0;
+  }
+  
+  figure img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  figure figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+  }
