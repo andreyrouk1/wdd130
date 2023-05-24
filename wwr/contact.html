@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | White Water Rafting</title>
+    <meta name="description" content="Get in touch with us through this page.">
+    <meta name="author" content="Andrii Sichkarenko">
+    <link rel="stylesheet" href="styles/rafting.css">
+  </head>
+  <body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="Rafting Site Logo">
+        <nav class="header-nav">
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About Us</a>
+            <a href="/trips.html">Trips</a>
+            <a href="/contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+          <img src="images/hero-contact.jpg" alt="contact us hero image">
+          <div class="contact">
+            <h1>Contact Us</h1>
+          </div>
+        </div>
+
+        <section class="company-section">
+          <h2>Company Information</h2>
+          <div class="company-info">
+            <div class="address">
+              <img src="images/address-icon.png" alt="Address Icon">
+              <p>111 W 7th S, Rexburg, ID 83440</p>
+            </div>
+            <div class="phone">
+              <img src="images/phone-icon.png" alt="Phone Icon">
+              <p>208-123-4567</p>
+            </div>
+            <div class="email">
+              <img src="images/email-icon.png" alt="Email Icon">
+              <p>info@rexburgrafting.com</p>
+            </div>
+          </div>
+          <div class="map">
+            <div class="map-wrapper">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.2131370987936!2d-111.79128532389313!3d43.8099382422795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b1ad780bffd%3A0x38be3029b3df960f!2s111%20W%207th%20S%2C%20Rexburg%2C%20ID%2083440!5e0!3m2!1sen!2sus!4v1684902228778!5m2!1sen!2sus" width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </section>
+
+        <section class="employee-section">
+          <h2>Our Team</h2>
+          <div class="employee-profile">
+            <img src="images/Jack.png" alt="Jack" class="employee-image">
+            <p class="employee-title">Jack M. - CEO</p>
+          </div>
+          <div class="employee-profile">
+            <img src="images/Jill.png" alt="Jill" class="employee-image">
+            <p class="employee-title">Jill V. - CFO</p>
+          </div>
+          <div class="employee-profile">
+            <img src="images/Raul.png" alt="Raul" class="employee-image">
+            <p class="employee-title">Raul K. - CMO</p>
+          </div>
+        </section>
+        
+        <section class="contact-form">
+          <h2>Get In Touch</h2>
+          <form>
+            <fieldset>
+              <legend>Contact Information</legend>
+              <label for="fullname">Full Name</label>
+              <input type="text" id="fullname" name="fullname" placeholder="Andrii Sichkarenko" required>
+              <label for="email">Email</label>
+              <input type="email" id="useremail" name="useremail" placeholder="andrii@rexburgrafting.com" required>
+            </fieldset>
+            <fieldset>
+              <div>
+                <label for="purpose">Purpose of Message:</label>
+                <div>
+                  <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+                  <label for="inquiry">General Inquiry</label>
+                </div>
+                <div>
+                  <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                  <label for="reservation">Reservation Question</label>
+                </div>
+                <div>
+                  <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                  <label for="suggestion">Website Suggestion</label>
+                </div>
+                <label for="newletter"><br>Please subscribe me to the monthly newsletter</label>
+                <input type="checkbox" id="newletter" name="newletter"><br><br>
+              </div>
+              
+              <label for="message">Your Message:</label>
+              <textarea id="message" name="message" rows="4" placeholder="This is my message..."></textarea>
+            </fieldset>
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 | Rafting Tours in Rexburg, Idaho | Andrii Sichkarenko 
+          <br><a href="https://app.moqups.com/mQenSsa1WZHX0cO7mG82o6aMAhqyZ9Jr/view/page/ad64222d5" target="_blank">Contact Us wireframe</a>
+        </p>
+        <nav class="footer-nav">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/fb.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/ig.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com" target="_blank"><img src="images/yt.png" alt="YouTube"></a>
+        </nav>
+    </footer>
+  </body>
+</html>
