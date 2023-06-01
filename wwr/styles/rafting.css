@@ -134,6 +134,15 @@ nav a:hover {
     text-align: center;
 }
 
+.hero a {
+    top: 70%;
+    left: 42%;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
 .hero img {
     display: block;
     width: 100%;
@@ -461,6 +470,22 @@ button:hover {
     justify-items: center;
   }
   
-  .grid-item {
+.grid-item {
     text-align: center;
-  }
+}
+
+.home-button {
+    position: absolute;
+    background-color: #0b88b9;
+    color: #fff;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    grid-column: span 2;
+}
+
+.home-button:hover {
+    background-color: var(--nav-hover-link-color);
+}
