@@ -382,3 +382,85 @@ button {
 button:hover {
     background-color: var(--nav-hover-link-color);
 }
+
+/* Trips Section and Table Styles */
+
+.trip-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+.trip {
+    width: calc(33.33% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: top;
+}
+
+.trip img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .trip img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+
+.trip h3 {
+    margin-top: 0;
+}
+
+.equipment-text {
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.trip-table {
+    border-collapse: collapse;
+    margin: auto;
+  }
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.book-button {
+    background-color: var(--nav-background-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    grid-column: span 2;
+}
+
+.book-button:hover {
+    background-color: var(--nav-hover-link-color);
+}
+
+/* Home Styles */
+
+.home-section {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
